@@ -1,0 +1,54 @@
+#
+# The required format is 'POS: <desired filename>',
+# where POS is the name of the well: the first character is a letter A-H,
+# the second character is 0 if the well number is <10
+# if well number is >=10, the the number occupies character two and three,
+# The POS tag must end with a colon (:)
+# Example: Well in position row C, column 5 will have POS 'C05:'
+#
+# NB! It is important that all names for the wells are unique, otherwise the files will be overwritten
+#
+# Lines that starts with hashtags (#) will not be read by the script 
+
+
+## Path to files to be renamed (NB! keep 'PATH=')##
+PATH=/home/my_fcs_data/2016-01-28 samples/0h
+
+
+## Path where you want the renamed files to be stored (NB! keep 'NEWPATH'. Leave blank to keep them in the same folder)##
+NEWPATH=/home/my_fcs_data/2016-01-28 samples/renamed
+
+
+
+## The tags MAIN_DIR, SUBDIR and SUB_SUBDIR can be used if the files should be stored in sub and subsub directories inside NEWPATH (or PATH if NEWPATH is left blank) ##
+# NB! these tags must also be in the well names below
+
+MAIN_DIR=strain1
+MAIN_DIR=strain2
+
+SUBDIR=bio-rep1
+SUBDIR=bio-rep2
+#SUBDIR=blanks
+
+SUB_SUBDIR=glucose1g-l
+SUB_SUBDIR=glucose20g-l
+
+
+## Names of rows ## 
+ROW_A01:strain1 glucose1g-l
+#ROW_A02:water
+ROW_A03:strain1 glucose20g-l
+#ROW_A04:water
+ROW_B01:strain2 glucose1g-l
+#ROW_B02:water
+ROW_B03:strain2 glucose20g-l
+#ROW_B04:water
+
+## Names of columns ##
+COL_01:bio-rep1
+#COL_02:water
+COL_03:bio-rep2
+#COL_04:water
+
+
+
