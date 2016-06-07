@@ -1,4 +1,4 @@
-FI_size_normalization_loader.m 
+#FI_size_normalization_loader.m 
 is a custom initiation script for the Knijnenburg morphology correction model for flow cytometry data.
 This script enables automated high-throughput data analysis of .fcs files by calling said correction model,
 extracting the normalized data and performing calculations on the geometrical mean of the histograms on the
