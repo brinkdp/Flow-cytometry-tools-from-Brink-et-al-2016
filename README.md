@@ -1,5 +1,8 @@
 # Flow-cytometry-tools
 Is a repository from the Yeast group at Applied Microbiology, Lund University, Sweden.
+
+The code found in this repository was used to process the data from the paper [Brink et al (2016)](https://microbialcellfactories.biomedcentral.com/articles/10.1186/s12934-016-0580-x). 
+
 At the moment, this repository contains the following tools for flow cytometry data analysis:
 
                  FI_size_normalization_loader
